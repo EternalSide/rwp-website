@@ -1,5 +1,5 @@
 "use client";
-import {VideoPlayer} from "@/rwp/components";
+import {VideoPlayer} from "react-web-player";
 import {useState} from "react";
 import HomePlayerSettings from "./HomePlayerSettings";
 import HomeInput from "./HomeInput";

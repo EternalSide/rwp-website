@@ -1,4 +1,4 @@
-import {usePlayer} from "@/hooks";
+import {usePlayer} from "react-web-player";
 import {useShallow} from "zustand/react/shallow";
 
 const OptionControl = ({value, valueName}: any) => {
