@@ -8,6 +8,7 @@ const config = {
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
 		"./rwp/**/*.{ts,tsx}",
+		"./node_modules/react-web-player/dist/esm/**/*.{js,ts,tsx}",
 	],
 	prefix: "",
 	theme: {
