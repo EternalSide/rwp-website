@@ -17,7 +17,10 @@ const HomePlayerExample = () => {
 			<p className='mb-1 text-sky-500'>videoUrl:</p>
 			<HomeInput setUrl={setUrl} />
 			<div className='flex items-start h-[478px] mt-3 gap-0 border rounded-xl overflow-hidden max-[1200px]:flex-col max-[1200px]:h-[1200px]'>
-				<VideoPlayer url={url} />
+				<VideoPlayer
+					className='h-full'
+					url={url}
+				/>
 				<HomePlayerSettings />
 			</div>
 		</div>
