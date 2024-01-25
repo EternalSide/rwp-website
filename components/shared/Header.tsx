@@ -21,6 +21,14 @@ const Header = () => {
 						</p>
 					</Link> */}
 					<a
+						href='https://www.npmjs.com/package/react-web-player'
+						target='_blank'
+					>
+						<p className='text-neutral-400 hover:text-sky-500 transition'>
+							NPM
+						</p>
+					</a>
+					<a
 						href='https://github.com/EternalSide'
 						target='_blank'
 					>
