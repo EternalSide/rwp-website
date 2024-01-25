@@ -77,13 +77,13 @@ const HomePlayerSettings = () => {
 	return (
 		<div className='bg-background p-5 w-[350px]'>
 			<p className='text-sm text-zinc-400  mb-1.5 text-left'>
-				Управление плеером из любого места.
+				Control your player from anywhere.
 			</p>
 			<p>
 				const player = <span className='text-sky-500'>usePlayer()</span>
 			</p>
 			<p className='text-sm text-zinc-400 mt-3 mb-1.5 text-left'>
-				Рендер только там, где нужно.
+				Render only where needed.
 			</p>
 			<div className='flex flex-col gap-3 items-start'>
 				{booleanData.map((item: (typeof booleanData)[0]) => (

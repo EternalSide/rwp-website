@@ -10,15 +10,15 @@ const HomePlayerExample = () => {
 	);
 
 	return (
-		<div className='mt-6 '>
+		<div className='mt-6'>
 			<div className='pb-3 border-b mb-4'>
-				<p className='text-2xl font-medium'>Плеер</p>
+				<p className='text-2xl font-medium'>Player Example</p>
 			</div>
 			<p className='mb-1 text-sky-500'>videoUrl:</p>
 			<HomeInput setUrl={setUrl} />
-			<div className='flex items-start h-[478px] mt-3 gap-0 border rounded-xl overflow-hidden max-[1200px]:flex-col max-[1200px]:h-[1200px]'>
+			<div className='flex items-start h-[478px] mt-3 gap-0 border rounded-xl overflow-hidden max-[1200px]:flex-col max-[1200px]:h-[980px]'>
 				<VideoPlayer
-					className='h-full'
+					className='h-full max-[1300px]:h-[500px] max-[1300px]:w-full'
 					url={url}
 				/>
 				<HomePlayerSettings />

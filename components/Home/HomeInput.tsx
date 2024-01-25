@@ -19,7 +19,7 @@ const HomeInput = ({setUrl}: any) => {
 				onClick={() => setUrl(value)}
 				className='text-white bg-sky-500 border-l-none rounded-l-none hover:bg-sky-600'
 			>
-				Сохранить
+				Update video
 			</Button>
 		</div>
 	);
