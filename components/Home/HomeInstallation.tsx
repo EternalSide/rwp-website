@@ -4,14 +4,14 @@ const HomeInstallation = () => {
 	return (
 		<>
 			<div className='pb-3 border-b'>
-				<h3 className='text-3xl font-medium'>Install</h3>
+				<h3 className='text-2xl font-medium'>Установка</h3>
 			</div>
-			<div className='mt-4'>
-				<CodeExample />
-			</div>
+
+			<CodeExample />
+
 			<div className='mt-6'>
 				<div className='pb-3 border-b'>
-					<p className='text-2xl font-medium'>Import</p>
+					<p className='text-2xl font-medium'>Импорт</p>
 				</div>
 				<div className='mt-4'>
 					<div className='p-5 rounded-md border border-input bg-zinc-900 min-h-[25px] '>
@@ -20,7 +20,7 @@ const HomeInstallation = () => {
 							{" { VideoPlayer }"} from{" "}
 							<span className='text-sky-500'>'react-web-player'</span>
 						</p>
-						<div className='mt-6'>{`<VideoPlayer url={url} />`}</div>
+						<div className=''>{`<VideoPlayer url={url} />`}</div>
 					</div>
 				</div>
 				<div className='mt-6'>
@@ -28,8 +28,8 @@ const HomeInstallation = () => {
 						<p className='text-2xl font-medium'>TailwindCSS</p>
 					</div>
 					<p className='mt-4'>
-						By default player using TailwindCSS styling so u need to add this
-						into your tailwind.config.ts object, into content: []
+						По умолчанию проигрыватель использует TailwindCSS, поэтому вам нужно
+						добавить в tailwind.config.ts content[] строку.
 					</p>
 					<div className='mt-4 p-5 rounded-md border border-input bg-zinc-900 min-h-[25px] '>
 						<p>

@@ -15,21 +15,8 @@ const Header = () => {
 					<h3 className='font-bold text-xl'>React Web Player</h3>
 				</div>
 				<div className='flex items-center gap-6'>
-					{/* <Link href='/docs'>
-						<p className='text-neutral-400 hover:text-sky-500 transition'>
-							Документация
-						</p>
-					</Link> */}
 					<a
-						href='https://www.npmjs.com/package/react-web-player'
-						target='_blank'
-					>
-						<p className='text-neutral-400 hover:text-sky-500 transition'>
-							NPM
-						</p>
-					</a>
-					<a
-						href='https://github.com/EternalSide'
+						href='https://github.com/EternalSide/rwp-website'
 						target='_blank'
 					>
 						<p className='text-neutral-400 hover:text-sky-500 transition'>

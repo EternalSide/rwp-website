@@ -1,10 +1,20 @@
-import {usePlayer} from "react-web-player";
+import {usePlayer} from "@/src/index";
 import {useShallow} from "zustand/react/shallow";
 
-const OptionControl = ({value, valueName}: any) => {
+const OptionControl = ({value, valueName, color}: any) => {
 	return (
 		<p>
-			{valueName}: <span className='text-sky-500'>{String(value)}</span>
+			<span
+				style={{
+					color,
+				}}
+			>
+				player.
+			</span>
+			{valueName}:{" "}
+			<span className='text-sky-500'>
+				{valueName === "progress" ? String(value).slice(0, 4) : String(value)}
+			</span>
 		</p>
 	);
 };
@@ -77,13 +87,22 @@ const HomePlayerSettings = () => {
 	return (
 		<div className='bg-background p-5 w-[350px]'>
 			<p className='text-sm text-zinc-400  mb-1.5 text-left'>
-				Control your player from anywhere.
+				Контроль из любого места.
 			</p>
 			<p>
-				const player = <span className='text-sky-500'>usePlayer()</span>
+				const
+				<span
+					style={{
+						color: options.colors?.baseColor,
+					}}
+				>
+					{" "}
+					player
+				</span>{" "}
+				= <span className='text-sky-500'>usePlayer()</span>
 			</p>
 			<p className='text-sm text-zinc-400 mt-3 mb-1.5 text-left'>
-				Render only where needed.
+				Никаких лишних ререндеров.
 			</p>
 			<div className='flex flex-col gap-3 items-start'>
 				{booleanData.map((item: (typeof booleanData)[0]) => (
@@ -91,6 +110,7 @@ const HomePlayerSettings = () => {
 						key={item.valueName}
 						value={item.value}
 						valueName={item.valueName}
+						color={options.colors?.baseColor}
 					/>
 				))}
 			</div>
