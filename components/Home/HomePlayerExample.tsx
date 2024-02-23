@@ -28,6 +28,7 @@ const HomePlayerExample = () => {
 				<VideoPlayer
 					className='max-[1300px]:h-[500px] max-[1300px]:w-full'
 					url={url}
+					autoPlay={false}
 					options={PlayerOptions}
 				/>
 
